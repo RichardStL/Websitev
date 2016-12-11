@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<link rel="icon" type="image/png" href="favicon.ico">
+		<title>Lettuce Eat!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="sss/sss.min.js"></script>
+		<link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+		<script>
+			jQuery(function($) {
+			$('.slider').sss();
+			});
+		</script>
+	</head>
+	
+	<body>
+	<div class="navbar-static-top navbar-inverse" id="home">
+		<div class="container">
+			<div class="navbar-brand">
+				<p id="top">Lettuce Eat</p>
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">Recipies</a></li>
+					<li><a href="#portfolio">About us</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron" id="jumbo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6" id="pic">
+					
+				</div>
+				<div class="col-md-4" id="welcome">
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="alt1" id="about">
+		<div class="container">
+			<div class="row, text-center">
+			<img src="vegan.png" alt="image">
+			<h1>Dinner Menu</h1>
+					<h2>Delisous home made meals for you to enjoy</h2><br />
+					<h3>all 100% vegan friendly</h3>
+			</div>
+			<div class="row">
+				<h1 class="text-center">Recipies</h1>
+				<div class="col-md-12, text-center" id="one">
+				<h2>Dinner</h2>
+					<p class="text-justify, text-center"> Some say its the final meal of the day but in our opinion their is always room for more. We hope that you feel the same way treat yourself and try out some of our dishes. 
+					</p>
+				</div>
+				<div class="col-md-12, text-center" id="two">
+				<br/>
+			</div>
+			<div class="text-center">
+			<h3>Check out some of the pictures taken of our dishes</h3>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container" id="portfolio">
+		<h1 class="text-center" id="port">Dinner Dishes</h1>
+		<div class="slider">
+			<img src="din1.jpg" alt="image" />
+			<img src="din2.jpg" alt="image" />		
+			<img src="din3.jpeg" alt="image" />		
+			<img src="din4.jpg" alt="image" />		
+			<img src="din5.jpg" alt="image" />	
+			<img src="din6.jpg" alt="image" />
+		</div>
+	</div>
+	<br/>
+	<div class="alt2">
+		<div class="container">
+			<footer>&copy; Seagull Squad<br />
+				<a class="github-button" href="https://github.com/anthonymoore1991" data-style="mega" aria-label="Follow @anthonymoore1991 on GitHub">Follow @anthonymoore1991</a>
+				<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script><br />
+				<a href="#home">Back to Top</a>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="js/bootstrap.js"></script>
+	<script>$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		  var target = $(this.hash);
+		  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').animate({
+			  scrollTop: target.offset().top
+			}, 1000);
+			return false;
+		  }
+		}
+	  });
+	});
+	</script>
+	</body>
+</html>
